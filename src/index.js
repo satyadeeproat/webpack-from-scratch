@@ -1,1 +1,3 @@
-console.log('Hello world');
+import nav from './nav';
+
+console.log(nav());
