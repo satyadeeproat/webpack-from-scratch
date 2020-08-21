@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "npm run build -- --mode development",
-    "prod": "npm run build -- --mode production",
+    "webpack": "webpack",
+    "dev": "npm run webpack -- --mode development",
+    "prod": "npm run webpack -- --mode production",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",  
+    "dev:debug": "npm run debug -- --mode development",
+    "prod:debug": "npm run debug -- --mode production",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
